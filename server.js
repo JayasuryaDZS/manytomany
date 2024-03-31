@@ -24,6 +24,9 @@ app.get("/users", (req, res) => {
     })
 })
 
+app.get("/testing", (req, res) => {
+    res.send(200).json({ status: 1, msg: "testing the data" })
+})
 
 //get all roles with respective users:
 app.get("/roles", (req, res) => {
