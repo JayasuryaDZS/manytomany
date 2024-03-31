@@ -28,6 +28,14 @@ app.get("/testing", (req, res) => {
     res.send(200).json({ status: 1, msg: "testing the data" })
 })
 
+app.get("/rebase", (req, res) => {
+    res.send(200).json({ status: 1, msg: "checking the rebase" })
+})
+
+app.get("/soft", (req, res) => {
+    res.send(200).json({ status: 1, msg: "Testing the git soft command" })
+})
+
 //get all roles with respective users:
 app.get("/roles", (req, res) => {
     roleModel.findAll({
